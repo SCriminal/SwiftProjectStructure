@@ -1,0 +1,19 @@
+//
+//  GlobalMethod.swift
+//  ProjectStructure
+//
+//  Created by 隋林栋 on 2020/6/24.
+//  Copyright © 2020 S. All rights reserved.
+//
+
+import Foundation
+
+class GlobalMethod {
+    static func canLeftSlide() -> Bool{
+        if (GB_Nav.viewControllers.count <= 1) {
+            return false
+        }
+        let lastVC = GB_Nav.viewControllers.last
+        return lastVC?.isSlideLeftValid ?? false;
+    }
+}

@@ -1,0 +1,116 @@
+PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - AlicloudPush (1.9.9.1):
+    - AlicloudUT
+    - AlicloudUtils
+  - AlicloudUT (5.2.0.12):
+    - AlicloudUTDID
+  - AlicloudUTDID (1.1.0.19)
+  - AlicloudUtils (1.3.7):
+    - AlicloudUTDID
+  - AliyunOSSiOS (2.6.5)
+  - AMap3DMap-NO-IDFA (7.1.0):
+    - AMapFoundation-NO-IDFA (~> 1.5)
+  - AMapFoundation-NO-IDFA (1.6.1)
+  - AMapLocation-NO-IDFA (2.6.4):
+    - AMapFoundation-NO-IDFA (~> 1.6.1)
+  - AMapNavi-NO-IDFA (7.1.0):
+    - AMap3DMap-NO-IDFA (~> 7.0)
+    - AMapFoundation-NO-IDFA (~> 1.5)
+  - AMapSearch-NO-IDFA (7.1.0):
+    - AMapFoundation-NO-IDFA (~> 1.4)
+  - DACircularProgress (2.3.1)
+  - MBProgressHUD (0.9.2)
+  - MJRefresh (3.1.17)
+  - MWPhotoBrowser (2.1.2):
+    - DACircularProgress (~> 2.3)
+    - MBProgressHUD (~> 0.9)
+    - "SDWebImage (!= 3.7.2, ~> 3.7)"
+  - pop (1.0.12)
+  - SDWebImage (3.8.3):
+    - SDWebImage/Core (= 3.8.3)
+  - SDWebImage/Core (3.8.3)
+  - ViewDeck (3.1.0)
+  - WechatOpenSDK (1.8.6)
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
+
+DEPENDENCIES:
+  - AFNetworking
+  - AlicloudPush
+  - AliyunOSSiOS (~> 2.6.0)
+  - AMapLocation-NO-IDFA
+  - AMapNavi-NO-IDFA
+  - AMapSearch-NO-IDFA
+  - MJRefresh (~> 3.1.12)
+  - MWPhotoBrowser
+  - pop
+  - SDWebImage
+  - ViewDeck
+  - WechatOpenSDK
+  - YYKit
+
+SPEC REPOS:
+  https://github.com/aliyun/aliyun-specs.git:
+    - AlicloudPush
+    - AlicloudUT
+    - AlicloudUTDID
+    - AlicloudUtils
+  https://github.com/CocoaPods/Specs.git:
+    - AFNetworking
+    - AliyunOSSiOS
+    - AMap3DMap-NO-IDFA
+    - AMapFoundation-NO-IDFA
+    - AMapLocation-NO-IDFA
+    - AMapNavi-NO-IDFA
+    - AMapSearch-NO-IDFA
+    - DACircularProgress
+    - MBProgressHUD
+    - MJRefresh
+    - MWPhotoBrowser
+    - pop
+    - SDWebImage
+    - ViewDeck
+    - WechatOpenSDK
+    - YYKit
+
+SPEC CHECKSUMS:
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  AlicloudPush: c87e2fae0e3909cad267d9a34379ae865c6b4ea0
+  AlicloudUT: b7673ac4e19b89857a22ca5651880c80525b5650
+  AlicloudUTDID: 79f509c3e997ef85fe307f8bfb2bb3be27f7e205
+  AlicloudUtils: ec441e41aa746d779c2c3958aa9489c59cb434ea
+  AliyunOSSiOS: 6d7f1f6aae0176095d147a88d60b23bbef93e0b7
+  AMap3DMap-NO-IDFA: 93a9dfb7571d33156668a4428141c6aaa80edd80
+  AMapFoundation-NO-IDFA: f2e353c14d755cab33601dc298be22c29c01df99
+  AMapLocation-NO-IDFA: 9e1c2c0f5df43a77caf2f97bc599f4eea3cc6856
+  AMapNavi-NO-IDFA: dd96a8433c6834e1c12682cdbfca71452792c518
+  AMapSearch-NO-IDFA: 439cf79b729210a33431cfa65995b59184d0f388
+  DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
+  MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
+  MJRefresh: ee5b68f639775462faba4db0fd243baf4d42c2cf
+  MWPhotoBrowser: 5836d7aa041dc05a13de380c246826578adc5ea5
+  pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
+  SDWebImage: a72e880a8fe0f7fc31efe15aaed443c074d2a80c
+  ViewDeck: 942d90dd23c9f97cc8038be352255378167edcca
+  WechatOpenSDK: 368ae03b72ee3ea1328c4f11326fbb5d2721d118
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
+
+PODFILE CHECKSUM: cfad2eeadece7d01483e2ade2e3018ee23d1c6b0
+
+COCOAPODS: 1.9.1
