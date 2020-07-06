@@ -10,5 +10,6 @@
 #define ProjectStructure_Bridging_Header_h
 
 #import "UIColor+YYAdd.h"
+#import "AFNetworking.h"
 
 #endif /* ProjectStructure_Bridging_Header_h */

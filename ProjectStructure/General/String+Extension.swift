@@ -50,9 +50,18 @@ extension String {
             return CGSize(width: size.width, height: maximumHeight)
         }
         return size
-        
     }
     
+    func base64Encode() -> String? {
+        let data = self.data(using: .utf8)
+        let base64Data = data?.base64EncodedData() ?? Data()
+        let baseString = String.init(data: base64Data, encoding: .utf8)
+        return baseString
+    }
     
+    func base64Decode() -> String? {
+        let data = Data.init(base64Encoded: self)
+        return String.init(data: data ?? Data(), encoding: .utf8)
+    }
     
 }
