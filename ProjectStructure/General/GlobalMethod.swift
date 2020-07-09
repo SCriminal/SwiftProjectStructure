@@ -16,4 +16,8 @@ class GlobalMethod {
         let lastVC = GB_Nav.viewControllers.last
         return lastVC?.isSlideLeftValid ?? false;
     }
+    
+    static func relogin() {
+        #warning("proceed")
+    }
 }

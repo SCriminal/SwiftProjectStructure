@@ -52,16 +52,39 @@ extension String {
         return size
     }
     
-    func base64Encode() -> String? {
+    func base64Encode() -> String {
         let data = self.data(using: .utf8)
         let base64Data = data?.base64EncodedData() ?? Data()
         let baseString = String.init(data: base64Data, encoding: .utf8)
-        return baseString
+        return baseString ?? ""
     }
     
-    func base64Decode() -> String? {
+    func base64Decode() -> String {
         let data = Data.init(base64Encoded: self)
-        return String.init(data: data ?? Data(), encoding: .utf8)
+        return String.init(data: data ?? Data(), encoding: .utf8) ?? ""
     }
     
+    
+    //拼接url
+    func appendUrl(value:String?, key:String?) -> String! {
+        guard let value = value, let key = key else {
+            return self
+        }
+        if self.contains(key + "=") {
+            return self
+        }
+        if self.firstIndex(of: "?") != nil {
+            if self.hasSuffix("?") || self.hasSuffix("&") {
+                return self + key + "=" + value
+            } else {
+                return self + "&" + key + "=" + value
+            }
+        } else {
+            if self.hasSuffix("&") {
+                let sub = self[..<self.index(self.startIndex, offsetBy: self.count - 1)]
+                return String(sub) + "?" + key + "=" + value
+            }
+            return self + "?" + key + "=" + value
+        }
+    }
 }

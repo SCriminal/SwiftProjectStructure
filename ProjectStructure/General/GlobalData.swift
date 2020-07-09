@@ -12,5 +12,5 @@ import UIKit
 var GB_Nav:UINavigationController!
 
 class GlobalData: NSObject {
-    
+    static var GB_Key: String? = nil
 }

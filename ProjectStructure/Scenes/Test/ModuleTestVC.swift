@@ -1,14 +1,14 @@
 //
-//  TestVC.swift
+//  ModuleTestVC.swift
 //  ProjectStructure
 //
-//  Created by 隋林栋 on 2020/6/28.
+//  Created by 隋林栋 on 2020/7/9.
 //  Copyright © 2020 S. All rights reserved.
 //
 
 import Foundation
 
-class TestVC: BaseVC {
+class ModuleTestVC: BaseVC {
     lazy var submitButton: UIButton = {
         let button = UIButton.init(type: .custom)
         button.tag = 1
