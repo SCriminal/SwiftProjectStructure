@@ -116,5 +116,293 @@
             landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "84D72D8B-251B-4CC3-BFBB-C1849BC2EF68"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ProjectStructure/Request/RequestApi.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "98"
+            endingLineNumber = "98"
+            landmarkName = "requestUrl(URL:delegate:parameters:returnALL:requestType:progressBlock:success:failure:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DF16C47B-E388-4F89-837F-0B92EC700370"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ProjectStructure/Request/RequestApi.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "163"
+            endingLineNumber = "163"
+            landmarkName = "switchRequest(URLString:parameters:requestType:progressBlock:success:failure:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9DA08548-F162-46F4-92C5-6238348A078A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ProjectStructure/Request/RequestApi.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "109"
+            endingLineNumber = "109"
+            landmarkName = "requestUrl(URL:delegate:parameters:returnALL:requestType:progressBlock:success:failure:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C56B7AD0-023B-4825-B7AD-9F4DA3C7A880"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ProjectStructure/Request/RequestApi.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "137"
+            endingLineNumber = "137"
+            landmarkName = "requestUrl(URL:delegate:parameters:returnALL:requestType:progressBlock:success:failure:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EEBBF49E-ABF7-4B88-A801-EBD097FC857E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ProjectStructure/Request/RequestApi.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "106"
+            endingLineNumber = "106"
+            landmarkName = "requestUrl(URL:delegate:parameters:returnALL:requestType:progressBlock:success:failure:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "EEBBF49E-ABF7-4B88-A801-EBD097FC857E - b7f4fccee2ec3395"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static ProjectStructure.RequestApi.requestUrl(URL: Swift.Optional&lt;Swift.String&gt;, delegate: Swift.Optional&lt;ProjectStructure.RequestDelegate&gt;, parameters: Swift.Optional&lt;Swift.Dictionary&lt;Swift.AnyHashable, Swift.Optional&lt;Any&gt;&gt;&gt;, returnALL: Swift.Bool, requestType: ProjectStructure.ENUM_REQUEST_TYPE, progressBlock: Swift.Optional&lt;(__C.NSProgress) -&gt; ()&gt;, success: Swift.Optional&lt;(Swift.Optional&lt;Swift.Dictionary&lt;Swift.AnyHashable, Swift.Optional&lt;Any&gt;&gt;&gt;, Swift.Optional&lt;Swift.AnyObject&gt;) -&gt; ()&gt;, failure: Swift.Optional&lt;(Swift.Optional&lt;Swift.String&gt;, Swift.Optional&lt;Swift.AnyObject&gt;) -&gt; ()&gt;) -&gt; ()"
+                  moduleName = "ProjectStructure"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/suilindong/Desktop/ProjectStructure/ProjectStructure/Request/RequestApi.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "107"
+                  endingLineNumber = "107"
+                  offsetFromSymbolStart = "847">
+               </Location>
+               <Location
+                  uuid = "EEBBF49E-ABF7-4B88-A801-EBD097FC857E - c4251906eb1c71b1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.NSURLSessionDataTask, Swift.Optional&lt;Any&gt;) -&gt; () in static ProjectStructure.RequestApi.requestUrl(URL: Swift.Optional&lt;Swift.String&gt;, delegate: Swift.Optional&lt;ProjectStructure.RequestDelegate&gt;, parameters: Swift.Optional&lt;Swift.Dictionary&lt;Swift.AnyHashable, Swift.Optional&lt;Any&gt;&gt;&gt;, returnALL: Swift.Bool, requestType: ProjectStructure.ENUM_REQUEST_TYPE, progressBlock: Swift.Optional&lt;(__C.NSProgress) -&gt; ()&gt;, success: Swift.Optional&lt;(Swift.Optional&lt;Swift.Dictionary&lt;Swift.AnyHashable, Swift.Optional&lt;Any&gt;&gt;&gt;, Swift.Optional&lt;Swift.AnyObject&gt;) -&gt; ()&gt;, failure: Swift.Optional&lt;(Swift.Optional&lt;Swift.String&gt;, Swift.Optional&lt;Swift.AnyObject&gt;) -&gt; ()&gt;) -&gt; ()"
+                  moduleName = "ProjectStructure"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/suilindong/Desktop/ProjectStructure/ProjectStructure/Request/RequestApi.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "90"
+                  endingLineNumber = "90"
+                  offsetFromSymbolStart = "291">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E8931DCA-CB26-43B8-BA8C-47F0727D920E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ProjectStructure/Request/RequestApi.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "197"
+            endingLineNumber = "197"
+            landmarkName = "replaceParameter(dicParameter:url:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C0E097DF-D3E2-4BC9-A8D3-61815EBB0D6D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ProjectStructure/General/Array+Extension.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "exchange(response:modelClass:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8C0AC0BB-E1BC-4E9A-B9AD-A873F161A605"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ProjectStructure/General/Array+Extension.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "exchange(response:modelClass:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AA70A058-AC37-4E67-BDE8-16C88030D4EE"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ProjectStructure/Scenes/Test/ModuleTestVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "requestModuleList()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4D6E0EF9-AC0A-4BC0-862A-44E2CE2B4BE3"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ProjectStructure/Scenes/Test/ModuleTestVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
+            landmarkName = "btnOpenClick()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4D6E0EF9-AC0A-4BC0-862A-44E2CE2B4BE3 - 9f7f7b60fd29a750"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ProjectStructure.ModuleTestVC.btnOpenClick() -&gt; ()"
+                  moduleName = "ProjectStructure"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/suilindong/Desktop/ProjectStructure/ProjectStructure/Scenes/Test/ModuleTestVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "73"
+                  endingLineNumber = "73"
+                  offsetFromSymbolStart = "225">
+               </Location>
+               <Location
+                  uuid = "4D6E0EF9-AC0A-4BC0-862A-44E2CE2B4BE3 - 3237bb275a665aa6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Dictionary&lt;Swift.AnyHashable, Swift.Optional&lt;Any&gt;&gt;&gt;, Swift.Optional&lt;Swift.AnyObject&gt;) -&gt; () in ProjectStructure.ModuleTestVC.btnOpenClick() -&gt; ()"
+                  moduleName = "ProjectStructure"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/suilindong/Desktop/ProjectStructure/ProjectStructure/Scenes/Test/ModuleTestVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "74"
+                  endingLineNumber = "74"
+                  offsetFromSymbolStart = "32">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "435FF05C-6A3A-45F0-9D0F-158A428DB5E6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ProjectStructure/General/OptionalStringCoalesce.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "???(_:_:)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "435FF05C-6A3A-45F0-9D0F-158A428DB5E6 - af8433c1402ff188"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ProjectStructure.??? infix&lt;A&gt;(Swift.Optional&lt;A&gt;, @autoclosure () -&gt; Swift.String) -&gt; Swift.String"
+                  moduleName = "ProjectStructure"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/suilindong/Desktop/ProjectStructure/ProjectStructure/General/OptionalStringCoalesce.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "248">
+               </Location>
+               <Location
+                  uuid = "435FF05C-6A3A-45F0-9D0F-158A428DB5E6 - af8433c1402ff188"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ProjectStructure.??? infix&lt;A&gt;(Swift.Optional&lt;A&gt;, @autoclosure () -&gt; Swift.String) -&gt; Swift.String"
+                  moduleName = "ProjectStructure"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/suilindong/Desktop/ProjectStructure/ProjectStructure/General/OptionalStringCoalesce.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "294">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A8531371-C516-4DFD-A5D7-804912D5A83F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ProjectStructure/Request/RequestApi+Neighbor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "requestLogin(account:password:delegate:success:failure:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

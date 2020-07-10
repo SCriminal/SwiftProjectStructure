@@ -39,6 +39,9 @@ class NoticeView: UIView {
     }
     
     func showNotice(_ strNotice: String!, time timeShow: CGFloat, frame: CGRect, viewShow: UIView!) {
+        if self.superview != nil {
+            self.removeFromSuperview()
+        }
         //去掉空格
         let aryStr = strNotice.split(separator: " ")
         let strNotice = aryStr.joined(separator: "")
@@ -70,7 +73,6 @@ class NoticeView: UIView {
     }
     func timerStart() {
         if timer == nil {
-            
             timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(timerRun), userInfo: nil, repeats: true)
         }
     }

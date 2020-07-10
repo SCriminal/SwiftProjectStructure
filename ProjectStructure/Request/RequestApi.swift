@@ -41,6 +41,14 @@ extension RequestDelegate {
 }
 
 class RequestApi {
+    class func getUrl(URL:String!,
+                      delegate:RequestDelegate?,
+                      parameters:Dictionary<AnyHashable, Any?>?,
+                      returnALL:Bool = false,
+                      success:((Dictionary<AnyHashable,Any?>?,AnyObject?)->Void)?,
+                      failure:((String?,AnyObject?)->Void)?){
+        self.requestUrl(URL: URL, delegate: delegate, parameters: parameters, returnALL: returnALL, requestType: .ENUM_REQUEST_GET, progressBlock: nil, success: success, failure: failure)
+    }
     
     class func putUrl(URL:String!,
                       delegate:RequestDelegate?,
@@ -132,7 +140,7 @@ class RequestApi {
     }
     
     // MARK: success
-    class func requestSuccessDelegate(delegate:RequestDelegate?, responseDic:Dictionary<AnyHashable,Any?>?, success:((Dictionary<AnyHashable,Any?>?, AnyObject?)->Void)?) {
+    private class func requestSuccessDelegate(delegate:RequestDelegate?, responseDic:Dictionary<AnyHashable,Any?>?, success:((Dictionary<AnyHashable,Any?>?, AnyObject?)->Void)?) {
         //走回调 请求成功
         delegate?.protocolDidRequestSuccess()
         if let success = success {
@@ -142,7 +150,7 @@ class RequestApi {
     }
     
     // MARK: fail
-    class func requestFailDelegate(delegate:RequestDelegate?, strError: String?, errorCode: String?, failure:((String?,AnyObject?)->Void)?) {
+    private class func requestFailDelegate(delegate:RequestDelegate?, strError: String?, errorCode: String?, failure:((String?,AnyObject?)->Void)?) {
         let _ = delegate?.protocolDidRequestFailure()
         if let failure = failure {
             failure(strError, errorCode as AnyObject?)
@@ -151,7 +159,7 @@ class RequestApi {
     }
     
     // MARK: 选择请求
-    class func switchRequest(URLString:String!, parameters:AnyObject!, requestType:ENUM_REQUEST_TYPE, progressBlock:((Progress) -> Void)?, success:((URLSessionDataTask, Any?) -> Void)?, failure:((URLSessionDataTask?, Error) -> Void)?) {
+    private class func switchRequest(URLString:String!, parameters:AnyObject!, requestType:ENUM_REQUEST_TYPE, progressBlock:((Progress) -> Void)?, success:((URLSessionDataTask, Any?) -> Void)?, failure:((URLSessionDataTask?, Error) -> Void)?) {
         switch (requestType) {
         case .ENUM_REQUEST_PUT:
             RequestInstance.sharedInstance.put(URLString, parameters: parameters, success: success, failure: failure)
@@ -172,7 +180,7 @@ class RequestApi {
     }
     
     // MARK: 拼接基础头字符串
-    class func setInitHead(dicParameters : Dictionary<AnyHashable, Any?>?) -> Dictionary<AnyHashable, Any?> {
+    private class func setInitHead(dicParameters : Dictionary<AnyHashable, Any?>?) -> Dictionary<AnyHashable, Any?> {
         var dicParameters = dicParameters ?? [:]
         for strKey in dicParameters.keys {
             if dicParameters[strKey] == nil {
@@ -185,9 +193,8 @@ class RequestApi {
     }
     
     //转化参数
-    class func replaceParameter(dicParameter:Dictionary<AnyHashable,Any?>!, url URL:String!) -> String! {
+    private class func replaceParameter(dicParameter:Dictionary<AnyHashable,Any?>!, url URL:String!) -> String! {
         var strReturn:String = URL.hasPrefix("http") ? URL : String(format:"%@%@",URL_HEAD,URL)
-        strReturn += GlobalData.GB_Key ?? ""
         strReturn = strReturn.appendUrl(value: GlobalData.GB_Key, key: "token")
         if dicParameter["scope"] != nil {
             strReturn = strReturn.appendUrl(value: ("/(num)"), key: "scope")
@@ -201,7 +208,7 @@ class RequestApi {
     }
     
     // MARK: 拼接头数据
-    class func fetchSystem() {
+    private class func fetchSystem() {
         RequestInstance.sharedInstance.configHeader()
     }
     

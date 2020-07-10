@@ -13,4 +13,9 @@ var GB_Nav:UINavigationController!
 
 class GlobalData: NSObject {
     static var GB_Key: String? = nil
+    static var GB_NoticeView: NoticeView? = {
+        let view = NoticeView.init()
+        return view
+    }()
+
 }

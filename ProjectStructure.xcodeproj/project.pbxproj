@@ -23,6 +23,8 @@
 		D29C5A9E24B416BE009DBE00 /* MacroRelease.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29C5A9D24B416BE009DBE00 /* MacroRelease.swift */; };
 		D29C5AA024B44C23009DBE00 /* OptionalStringCoalesce.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29C5A9F24B44C23009DBE00 /* OptionalStringCoalesce.swift */; };
 		D2A875E924B6BE8900E4FE8A /* ModuleTestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A875E824B6BE8900E4FE8A /* ModuleTestVC.swift */; };
+		D2A875EB24B6F54D00E4FE8A /* ModelModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A875EA24B6F54D00E4FE8A /* ModelModule.swift */; };
+		D2A875ED24B6F68100E4FE8A /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A875EC24B6F68100E4FE8A /* Array+Extension.swift */; };
 		D2CEBAB124AC799A00518270 /* MacroLocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CEBAB024AC799A00518270 /* MacroLocal.swift */; };
 		D2CEBAC124ADD7C600518270 /* Image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2CEBAC024ADD7C600518270 /* Image.xcassets */; };
 		D2CEBAC424ADD86600518270 /* BaseNavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CEBAC324ADD86600518270 /* BaseNavView.swift */; };
@@ -58,6 +60,8 @@
 		D29C5A9D24B416BE009DBE00 /* MacroRelease.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacroRelease.swift; sourceTree = "<group>"; };
 		D29C5A9F24B44C23009DBE00 /* OptionalStringCoalesce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalStringCoalesce.swift; sourceTree = "<group>"; };
 		D2A875E824B6BE8900E4FE8A /* ModuleTestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleTestVC.swift; sourceTree = "<group>"; };
+		D2A875EA24B6F54D00E4FE8A /* ModelModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelModule.swift; sourceTree = "<group>"; };
+		D2A875EC24B6F68100E4FE8A /* Array+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
 		D2CEBAB024AC799A00518270 /* MacroLocal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MacroLocal.swift; sourceTree = "<group>"; };
 		D2CEBABE24AD8A4500518270 /* ProjectStructure_Bridging_Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProjectStructure_Bridging_Header.h; sourceTree = "<group>"; };
 		D2CEBAC024ADD7C600518270 /* Image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Image.xcassets; sourceTree = "<group>"; };
@@ -183,6 +187,7 @@
 		D20BFCE124A0ADFB00C0EEEE /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D2A875EA24B6F54D00E4FE8A /* ModelModule.swift */,
 			);
 			name = Model;
 			path = ProjectStructure/Model;
@@ -206,6 +211,7 @@
 				D29C5A9924B30568009DBE00 /* DeviceInfo.swift */,
 				D29C5A9B24B30A9E009DBE00 /* ProjectInfo.swift */,
 				D29C5A9F24B44C23009DBE00 /* OptionalStringCoalesce.swift */,
+				D2A875EC24B6F68100E4FE8A /* Array+Extension.swift */,
 			);
 			name = General;
 			path = ProjectStructure/General;
@@ -384,8 +390,10 @@
 				D2F4748624A33084003B30C5 /* UILabel+Extension.swift in Sources */,
 				D29C5AA024B44C23009DBE00 /* OptionalStringCoalesce.swift in Sources */,
 				D299761E24A842050048CD2E /* String+Extension.swift in Sources */,
+				D2A875ED24B6F68100E4FE8A /* Array+Extension.swift in Sources */,
 				D29C5A9E24B416BE009DBE00 /* MacroRelease.swift in Sources */,
 				D2CEBAC424ADD86600518270 /* BaseNavView.swift in Sources */,
+				D2A875EB24B6F54D00E4FE8A /* ModelModule.swift in Sources */,
 				D20BFCE924A0AE6B00C0EEEE /* LoadingView.swift in Sources */,
 				D29C5A9A24B30568009DBE00 /* DeviceInfo.swift in Sources */,
 			);

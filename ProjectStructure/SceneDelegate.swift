@@ -21,7 +21,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         window = UIWindow.init(windowScene: scene as! UIWindowScene)
         window?.frame = UIScreen.main.bounds
-        window?.rootViewController = TestVC.init()
+        GB_Nav = UINavigationController.init(rootViewController: TestVC.init())
+        GB_Nav.navigationBar.isHidden = true
+        window?.rootViewController = GB_Nav
         window?.makeKeyAndVisible()
         
     }
