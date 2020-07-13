@@ -16,10 +16,6 @@ extension RequestApi {
                                   "terminalType":3,
                                   "account":account,
                                   "password":password.base64Encode()]
-        let a = dic["scene"]
-        if a is Optional<Any> {
-            print(a!!)
-        }
         
         self.postUrl(URL: "/auth/user/login/3", delegate: delegate, parameters: dic, success: { (response, mark) in
             GlobalData.GB_Key = response?["token"] as? String
@@ -54,7 +50,7 @@ extension RequestApi {
                                   "isAndroid":model.isAndroid,
                                   "createTime":model.createTime,
                                   "id":model.id]
-        self.getUrl(URL: "/admin/module/{id}", delegate: delegate, parameters: dic, success: success, failure: failure)
+        self.patchUrl(URL: "/admin/module/{id}", delegate: delegate, parameters: dic, success: success, failure: failure)
     }
     
     /*

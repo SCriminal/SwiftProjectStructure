@@ -295,54 +295,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "4D6E0EF9-AC0A-4BC0-862A-44E2CE2B4BE3"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ProjectStructure/Scenes/Test/ModuleTestVC.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "73"
-            endingLineNumber = "73"
-            landmarkName = "btnOpenClick()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "4D6E0EF9-AC0A-4BC0-862A-44E2CE2B4BE3 - 9f7f7b60fd29a750"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ProjectStructure.ModuleTestVC.btnOpenClick() -&gt; ()"
-                  moduleName = "ProjectStructure"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/suilindong/Desktop/ProjectStructure/ProjectStructure/Scenes/Test/ModuleTestVC.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "73"
-                  endingLineNumber = "73"
-                  offsetFromSymbolStart = "225">
-               </Location>
-               <Location
-                  uuid = "4D6E0EF9-AC0A-4BC0-862A-44E2CE2B4BE3 - 3237bb275a665aa6"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Dictionary&lt;Swift.AnyHashable, Swift.Optional&lt;Any&gt;&gt;&gt;, Swift.Optional&lt;Swift.AnyObject&gt;) -&gt; () in ProjectStructure.ModuleTestVC.btnOpenClick() -&gt; ()"
-                  moduleName = "ProjectStructure"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/suilindong/Desktop/ProjectStructure/ProjectStructure/Scenes/Test/ModuleTestVC.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "74"
-                  endingLineNumber = "74"
-                  offsetFromSymbolStart = "32">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "435FF05C-6A3A-45F0-9D0F-158A428DB5E6"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -386,22 +338,6 @@
                   offsetFromSymbolStart = "294">
                </Location>
             </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "A8531371-C516-4DFD-A5D7-804912D5A83F"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ProjectStructure/Request/RequestApi+Neighbor.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "20"
-            endingLineNumber = "20"
-            landmarkName = "requestLogin(account:password:delegate:success:failure:)"
-            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

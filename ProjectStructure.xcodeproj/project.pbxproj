@@ -13,6 +13,8 @@
 		262B0FBBAA2819DB4B9E6159 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262B04E563A2FC1CB6370E70 /* SceneDelegate.swift */; };
 		D20BFCE724A0AE1200C0EEEE /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20BFCE524A0AE1200C0EEEE /* BaseVC.swift */; };
 		D20BFCE924A0AE6B00C0EEEE /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20BFCE824A0AE6B00C0EEEE /* LoadingView.swift */; };
+		D226E62C24BC4B4900DFB5FB /* Any+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D226E62B24BC4B4900DFB5FB /* Any+Extension.swift */; };
+		D226E63024BC512500DFB5FB /* TestJson.json in Resources */ = {isa = PBXBuildFile; fileRef = D226E62F24BC512500DFB5FB /* TestJson.json */; };
 		D25A95A224B5A31200E9FFB7 /* RequestApi+Neighbor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25A95A124B5A31200E9FFB7 /* RequestApi+Neighbor.swift */; };
 		D299761E24A842050048CD2E /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D299761D24A842050048CD2E /* String+Extension.swift */; };
 		D299762424A891B80048CD2E /* TestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D299762324A891B80048CD2E /* TestVC.swift */; };
@@ -50,6 +52,8 @@
 		C36266706B749A965D546441 /* Pods-ProjectStructure.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectStructure.release.xcconfig"; path = "Target Support Files/Pods-ProjectStructure/Pods-ProjectStructure.release.xcconfig"; sourceTree = "<group>"; };
 		D20BFCE524A0AE1200C0EEEE /* BaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
 		D20BFCE824A0AE6B00C0EEEE /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		D226E62B24BC4B4900DFB5FB /* Any+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Any+Extension.swift"; sourceTree = "<group>"; };
+		D226E62F24BC512500DFB5FB /* TestJson.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = TestJson.json; sourceTree = "<group>"; };
 		D25A95A124B5A31200E9FFB7 /* RequestApi+Neighbor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RequestApi+Neighbor.swift"; sourceTree = "<group>"; };
 		D299761D24A842050048CD2E /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		D299762324A891B80048CD2E /* TestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestVC.swift; sourceTree = "<group>"; };
@@ -212,6 +216,7 @@
 				D29C5A9B24B30A9E009DBE00 /* ProjectInfo.swift */,
 				D29C5A9F24B44C23009DBE00 /* OptionalStringCoalesce.swift */,
 				D2A875EC24B6F68100E4FE8A /* Array+Extension.swift */,
+				D226E62B24BC4B4900DFB5FB /* Any+Extension.swift */,
 			);
 			name = General;
 			path = ProjectStructure/General;
@@ -229,6 +234,7 @@
 			isa = PBXGroup;
 			children = (
 				D299762324A891B80048CD2E /* TestVC.swift */,
+				D226E62F24BC512500DFB5FB /* TestJson.json */,
 				D2A875E824B6BE8900E4FE8A /* ModuleTestVC.swift */,
 			);
 			path = Test;
@@ -310,6 +316,7 @@
 				D2CEBAC624ADD8A300518270 /* back_black.png in Resources */,
 				262B085E55AC66E1DA09EF2F /* Assets.xcassets in Resources */,
 				D2CEBAC124ADD7C600518270 /* Image.xcassets in Resources */,
+				D226E63024BC512500DFB5FB /* TestJson.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,6 +394,7 @@
 				D2CEBAB124AC799A00518270 /* MacroLocal.swift in Sources */,
 				D2A875E924B6BE8900E4FE8A /* ModuleTestVC.swift in Sources */,
 				D2F4747A24A20F46003B30C5 /* MacroSize.swift in Sources */,
+				D226E62C24BC4B4900DFB5FB /* Any+Extension.swift in Sources */,
 				D2F4748624A33084003B30C5 /* UILabel+Extension.swift in Sources */,
 				D29C5AA024B44C23009DBE00 /* OptionalStringCoalesce.swift in Sources */,
 				D299761E24A842050048CD2E /* String+Extension.swift in Sources */,

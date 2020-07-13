@@ -201,7 +201,7 @@ class RequestApi {
         }
         for key in dicParameter.keys {
             if strReturn.range(of: "{\(key)}") != nil {
-                strReturn = strReturn.replacingOccurrences(of: "{\(key)}", with: dicParameter[key] ??? "")
+                strReturn = strReturn.replacingOccurrences(of: "{\(key)}", with: dicParameter[key]?.flattened() ??? "")
             }
         }
         return strReturn
