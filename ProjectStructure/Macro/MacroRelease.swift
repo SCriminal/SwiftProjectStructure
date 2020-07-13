@@ -11,10 +11,10 @@ import Foundation
 //请求URL
 #if DEBUG
 
-let URL_HEAD =  "http://112.253.1.72:10231"
-let URL_IMAGE = "http://112.253.1.72:10299"//image
-//let URL_HEAD =  "https://api.wsq.hongjiafu.cn"
-//let URL_IMAGE = "https://file.wsq.hongjiafu.cn"//image
+//let URL_HEAD =  "http://112.253.1.72:10231"
+//let URL_IMAGE = "http://112.253.1.72:10299"//image
+let URL_HEAD =  "https://api.wsq.hongjiafu.cn"
+let URL_IMAGE = "https://file.wsq.hongjiafu.cn"//image
 let URL_SHARE = "http://172.16.1.102:30001"
 
 #else

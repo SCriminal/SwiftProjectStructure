@@ -75,7 +75,9 @@ class ModuleTestVC: BaseVC {
     
     @objc func btnLoginClick() {
         //        RequestApi.requestLogin(account: "15263676100", password: "Hjf2020", delegate: nil, success: { (response, object) in
-        RequestApi.requestLogin(account: "15553611112", password: "123456", delegate: nil, success: { (response, object) in
+        let account = URL_HEAD.hasPrefix("https") ? "15263676100" : "15553611112"
+        let pwd = URL_HEAD.hasPrefix("https") ? "Hjf2020" : "123456"
+        RequestApi.requestLogin(account: account, password: pwd, delegate: nil, success: { (response, object) in
             GlobalMethod.showAlert("login success")
             self.requestModuleList()
         }, failure: {
