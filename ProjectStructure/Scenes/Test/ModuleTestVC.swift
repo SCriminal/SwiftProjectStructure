@@ -35,6 +35,19 @@ class ModuleTestVC: BaseVC {
         return button
     }()
     
+    lazy var closeButton: UIButton = {
+        let button = UIButton.init(type: .custom)
+        button.tag = 1
+        button.addTarget(self, action: #selector(btnCloseClick), for: .touchUpInside)
+        button.backgroundColor = .gray
+        button.titleLabel?.font = UIFont.systemFont(ofSize: F(18))
+        button.setTitle("close", for: .normal)
+        button.setTitleColor(.black, for: .normal)
+        button.widthHeight = (100,40)
+        button.addRoundCorner(corner: .allCorners, radius: 5, lineWidth: 0, lineColor: .clear)
+        return button
+    }()
+    
     lazy var aryDatas: Array<ModelModule> = {
         let ary:Array<ModelModule> = Array()
         return ary
@@ -47,6 +60,9 @@ class ModuleTestVC: BaseVC {
         self.view.addSubview(submitButton)
         openButton.leftTop = (0, submitButton.bottom)
         self.view.addSubview(openButton)
+        closeButton.leftTop = (0, openButton.bottom)
+        self.view.addSubview(closeButton)
+        
     }
     
     func requestModuleList() {
@@ -68,20 +84,7 @@ class ModuleTestVC: BaseVC {
         })
     }
     
-    @objc func btnOpenClick() {
-        for i in 0..<aryDatas.count {
-            let item = aryDatas[i]
-            if let isOpen = item.isOpen, isOpen == 0 {
-                continue
-            }
-            if let isIos = item.isIos, isIos == 1 {
-                if let isUrl = item.isURL, isUrl != 0 {
-                    changeValue(index: i, isOpen: false)
-                    return
-                }
-            }
-        }
-    }
+    
     
     func changeValue(index: Int, isOpen: Bool) {
         aryDatas[index].isIos = isOpen ? 1 : 0
@@ -93,8 +96,36 @@ class ModuleTestVC: BaseVC {
             }
         }, failure: nil)
     }
-    
     @objc func btnCloseClick() {
-        
+        for i in 0..<aryDatas.count {
+            let item = aryDatas[i]
+            if let isOpen = item.isOpen, isOpen == 0 {
+                continue
+            }
+            if let isIos = item.isIos, isIos == 0 {
+                continue
+            }
+            if let goMode = item.goMode, goMode == 3, let ios = item.ios, ios.count > 0, !ios.hasPrefix("Invoke"), !ios.hasPrefix("SafetyIndexDetailVC") {
+                continue
+            } else {
+                changeValue(index: i, isOpen: false)
+                return
+            }
+        }
+    }
+    @objc func btnOpenClick() {
+        for i in 0..<aryDatas.count {
+            let item = aryDatas[i]
+            if let isOpen = item.isOpen, isOpen == 0 {
+                continue
+            }
+            if let isIos = item.isIos, isIos == 1 {
+                continue
+            }
+            if let isIos = item.isIos, isIos == 0 {
+                changeValue(index: i, isOpen: true)
+                return
+            }
+        }
     }
 }
