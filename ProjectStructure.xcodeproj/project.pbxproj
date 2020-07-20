@@ -15,7 +15,12 @@
 		D20BFCE924A0AE6B00C0EEEE /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20BFCE824A0AE6B00C0EEEE /* LoadingView.swift */; };
 		D226E62C24BC4B4900DFB5FB /* Any+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D226E62B24BC4B4900DFB5FB /* Any+Extension.swift */; };
 		D226E63024BC512500DFB5FB /* TestJson.json in Resources */ = {isa = PBXBuildFile; fileRef = D226E62F24BC512500DFB5FB /* TestJson.json */; };
+		D25651BD24C13F2E00CB7A4E /* JavaTestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25651BC24C13F2E00CB7A4E /* JavaTestVC.swift */; };
 		D25A95A224B5A31200E9FFB7 /* RequestApi+Neighbor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25A95A124B5A31200E9FFB7 /* RequestApi+Neighbor.swift */; };
+		D283B40024C5410B003BDBA8 /* CVSParseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D283B3FF24C5410B003BDBA8 /* CVSParseVC.swift */; };
+		D283B40424C5450A003BDBA8 /* carType.txt in Resources */ = {isa = PBXBuildFile; fileRef = D283B40324C5450A003BDBA8 /* carType.txt */; };
+		D283B40624C56A45003BDBA8 /* ModelCSV.swift in Sources */ = {isa = PBXBuildFile; fileRef = D283B40524C56A45003BDBA8 /* ModelCSV.swift */; };
+		D283B40824C57225003BDBA8 /* CarTypeOrigin.json in Resources */ = {isa = PBXBuildFile; fileRef = D283B40724C57224003BDBA8 /* CarTypeOrigin.json */; };
 		D299761E24A842050048CD2E /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D299761D24A842050048CD2E /* String+Extension.swift */; };
 		D299762424A891B80048CD2E /* TestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D299762324A891B80048CD2E /* TestVC.swift */; };
 		D29C5A9424B2FB09009DBE00 /* RequestApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29C5A9324B2FB09009DBE00 /* RequestApi.swift */; };
@@ -54,7 +59,12 @@
 		D20BFCE824A0AE6B00C0EEEE /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		D226E62B24BC4B4900DFB5FB /* Any+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Any+Extension.swift"; sourceTree = "<group>"; };
 		D226E62F24BC512500DFB5FB /* TestJson.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = TestJson.json; sourceTree = "<group>"; };
+		D25651BC24C13F2E00CB7A4E /* JavaTestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JavaTestVC.swift; sourceTree = "<group>"; };
 		D25A95A124B5A31200E9FFB7 /* RequestApi+Neighbor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RequestApi+Neighbor.swift"; sourceTree = "<group>"; };
+		D283B3FF24C5410B003BDBA8 /* CVSParseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVSParseVC.swift; sourceTree = "<group>"; };
+		D283B40324C5450A003BDBA8 /* carType.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = carType.txt; sourceTree = "<group>"; };
+		D283B40524C56A45003BDBA8 /* ModelCSV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelCSV.swift; sourceTree = "<group>"; };
+		D283B40724C57224003BDBA8 /* CarTypeOrigin.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CarTypeOrigin.json; sourceTree = "<group>"; };
 		D299761D24A842050048CD2E /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		D299762324A891B80048CD2E /* TestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestVC.swift; sourceTree = "<group>"; };
 		D29C5A9324B2FB09009DBE00 /* RequestApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestApi.swift; sourceTree = "<group>"; };
@@ -192,6 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				D2A875EA24B6F54D00E4FE8A /* ModelModule.swift */,
+				D283B40524C56A45003BDBA8 /* ModelCSV.swift */,
 			);
 			name = Model;
 			path = ProjectStructure/Model;
@@ -233,9 +244,13 @@
 		D299762224A891AA0048CD2E /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				D283B40724C57224003BDBA8 /* CarTypeOrigin.json */,
+				D283B40324C5450A003BDBA8 /* carType.txt */,
 				D299762324A891B80048CD2E /* TestVC.swift */,
 				D226E62F24BC512500DFB5FB /* TestJson.json */,
 				D2A875E824B6BE8900E4FE8A /* ModuleTestVC.swift */,
+				D25651BC24C13F2E00CB7A4E /* JavaTestVC.swift */,
+				D283B3FF24C5410B003BDBA8 /* CVSParseVC.swift */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -317,6 +332,8 @@
 				262B085E55AC66E1DA09EF2F /* Assets.xcassets in Resources */,
 				D2CEBAC124ADD7C600518270 /* Image.xcassets in Resources */,
 				D226E63024BC512500DFB5FB /* TestJson.json in Resources */,
+				D283B40824C57225003BDBA8 /* CarTypeOrigin.json in Resources */,
+				D283B40424C5450A003BDBA8 /* carType.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,10 +394,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D25A95A224B5A31200E9FFB7 /* RequestApi+Neighbor.swift in Sources */,
+				D25651BD24C13F2E00CB7A4E /* JavaTestVC.swift in Sources */,
 				D299762424A891B80048CD2E /* TestVC.swift in Sources */,
 				D2F4748424A32F6B003B30C5 /* NoticeView.swift in Sources */,
 				D29C5A9624B2FBB3009DBE00 /* RequestInstance.swift in Sources */,
+				D283B40024C5410B003BDBA8 /* CVSParseVC.swift in Sources */,
 				D2F4747824A1FF91003B30C5 /* UIView+Extension.swift in Sources */,
+				D283B40624C56A45003BDBA8 /* ModelCSV.swift in Sources */,
 				D29C5A9C24B30A9E009DBE00 /* ProjectInfo.swift in Sources */,
 				D2F4748224A32A24003B30C5 /* UIViewController+Extension.swift in Sources */,
 				262B0BF7FBD4DCE3E339860C /* AppDelegate.swift in Sources */,

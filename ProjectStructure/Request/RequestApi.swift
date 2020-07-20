@@ -120,6 +120,10 @@ class RequestApi {
                             GlobalMethod.relogin()
                             return
                         }
+                        if returnALL {
+                            self.requestSuccessDelegate(delegate: delegate, responseDic: dicResponse, success: success)
+                            return
+                        }
                         {
                             self.requestFailDelegate(delegate: delegate, strError: dicResponse[RESPONSE_MESSAGE] as? String, errorCode: dicResponse[RESPONSE_CODE] as? String, failure: failure)
                             return

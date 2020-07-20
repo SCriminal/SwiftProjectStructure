@@ -1,6 +1,6 @@
 import UIKit
 
-class BaseVC: UIViewController, UITextFieldDelegate {
+class BaseVC: UIViewController, UITextFieldDelegate, RequestDelegate{
     lazy var loadingView: LoadingView = {
         let view = LoadingView()
         print("lazy init loading view")
