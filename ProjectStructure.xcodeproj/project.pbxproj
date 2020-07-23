@@ -15,6 +15,7 @@
 		D20BFCE924A0AE6B00C0EEEE /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20BFCE824A0AE6B00C0EEEE /* LoadingView.swift */; };
 		D226E62C24BC4B4900DFB5FB /* Any+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D226E62B24BC4B4900DFB5FB /* Any+Extension.swift */; };
 		D226E63024BC512500DFB5FB /* TestJson.json in Resources */ = {isa = PBXBuildFile; fileRef = D226E62F24BC512500DFB5FB /* TestJson.json */; };
+		D24A3F2724C819B2004F79FE /* NoResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24A3F2624C819B2004F79FE /* NoResultView.swift */; };
 		D25651BD24C13F2E00CB7A4E /* JavaTestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25651BC24C13F2E00CB7A4E /* JavaTestVC.swift */; };
 		D25A95A224B5A31200E9FFB7 /* RequestApi+Neighbor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25A95A124B5A31200E9FFB7 /* RequestApi+Neighbor.swift */; };
 		D283B40024C5410B003BDBA8 /* CVSParseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D283B3FF24C5410B003BDBA8 /* CVSParseVC.swift */; };
@@ -59,6 +60,7 @@
 		D20BFCE824A0AE6B00C0EEEE /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		D226E62B24BC4B4900DFB5FB /* Any+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Any+Extension.swift"; sourceTree = "<group>"; };
 		D226E62F24BC512500DFB5FB /* TestJson.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = TestJson.json; sourceTree = "<group>"; };
+		D24A3F2624C819B2004F79FE /* NoResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoResultView.swift; sourceTree = "<group>"; };
 		D25651BC24C13F2E00CB7A4E /* JavaTestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JavaTestVC.swift; sourceTree = "<group>"; };
 		D25A95A124B5A31200E9FFB7 /* RequestApi+Neighbor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RequestApi+Neighbor.swift"; sourceTree = "<group>"; };
 		D283B3FF24C5410B003BDBA8 /* CVSParseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVSParseVC.swift; sourceTree = "<group>"; };
@@ -214,6 +216,7 @@
 				D2CEBAC224ADD86600518270 /* Nav */,
 				D20BFCE824A0AE6B00C0EEEE /* LoadingView.swift */,
 				D20BFCE524A0AE1200C0EEEE /* BaseVC.swift */,
+				D24A3F2624C819B2004F79FE /* NoResultView.swift */,
 				D2F4747B24A32214003B30C5 /* BaseVC+KeyboardObserve.swift */,
 				D2F4747724A1FF91003B30C5 /* UIView+Extension.swift */,
 				D2F4748124A32A24003B30C5 /* UIViewController+Extension.swift */,
@@ -397,6 +400,7 @@
 				D25651BD24C13F2E00CB7A4E /* JavaTestVC.swift in Sources */,
 				D299762424A891B80048CD2E /* TestVC.swift in Sources */,
 				D2F4748424A32F6B003B30C5 /* NoticeView.swift in Sources */,
+				D24A3F2724C819B2004F79FE /* NoResultView.swift in Sources */,
 				D29C5A9624B2FBB3009DBE00 /* RequestInstance.swift in Sources */,
 				D283B40024C5410B003BDBA8 /* CVSParseVC.swift in Sources */,
 				D2F4747824A1FF91003B30C5 /* UIView+Extension.swift in Sources */,

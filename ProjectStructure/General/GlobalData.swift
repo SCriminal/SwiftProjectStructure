@@ -18,4 +18,6 @@ class GlobalData: NSObject {
         return view
     }()
 
+    static var statusBarStyle: UIStatusBarStyle = .default
+    static var isStatusHidden: Bool = false
 }

@@ -3,17 +3,25 @@ import UIKit
 class BaseVC: UIViewController, UITextFieldDelegate, RequestDelegate{
     lazy var loadingView: LoadingView = {
         let view = LoadingView()
-        print("lazy init loading view")
         return view
     }()
-//    private var _noticeView: UnsafeMutablePointer<NoticeView>!
+    lazy var noticeView: NoticeView = {
+        let view = NoticeView.init()
+        return view
+    }()
     lazy var viewBG: UIView = {
         let view = UIView()
         view.frame = CGRect.init(x: 0, y: 0, width: SCREEN_WIDTH, height: SCREEN_HEIGHT)
         return view
     }()
-//    private var _noResultView: UnsafeMutablePointer<NoResultView>!
-//    private var _noResultLoadingView: UnsafeMutablePointer<NoResultView>!
+    lazy var noResultView: NoResultView = {
+        let view = NoResultView()
+        return view
+    }()
+    lazy var noResultLoadingView: NoResultView = {
+        let view = NoResultView()
+        return view
+    }()
     var isNotShowNoticeView: Bool = false
     var isNotShowLoadingView: Bool = false
     //不显示notice
@@ -21,21 +29,10 @@ class BaseVC: UIViewController, UITextFieldDelegate, RequestDelegate{
     //不显示loading
     var isShowNoResultLoadingView: Bool = false
    
-  
-  
-
     deinit {
         NotificationCenter.default.removeObserver(self)
     }
 
-//    func viewBG() -> UIView! {
-//        if !_viewBG {
-//            _viewBG = UIView(frame: CGRect(x: 0, y: 0, width: SCREEN_WIDTH, height: SCREEN_HEIGHT))
-//            _viewBG.backgroundColor = COLOR_BACKGROUND
-//        }
-//
-//        return _viewBG
-//    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -70,28 +67,8 @@ class BaseVC: UIViewController, UITextFieldDelegate, RequestDelegate{
             self.removeKeyboardObserve()
         }
     }
-   /*
-    func noticeView() -> UnsafeMutablePointer<NoticeView>! {
-        if _noticeView == nil {
-            _noticeView = NoticeView()
-        }
-
-        return _noticeView
-    }
-    func noResultView() -> UnsafeMutablePointer<NoResultView>! {
-        if !_noResultView {
-            _noResultView = NoResultView()
-        }
-
-        return _noResultView
-    }
-    func noResultLoadingView() -> UnsafeMutablePointer<NoResultView>! {
-        if !_noResultLoadingView {
-            _noResultLoadingView = NoResultView()
-        }
-
-        return _noResultLoadingView
-    }
+    
+    //MARK: request protocol
     func protocolWillRequest() {
         self.showNoResultLoadingView()
         self.showLoadingView()
@@ -109,49 +86,46 @@ class BaseVC: UIViewController, UITextFieldDelegate, RequestDelegate{
     }
     func showNoResultLoadingView() {
         self.noResultLoadingView.removeFromSuperview()
-
         if !self.isShowNoResultLoadingView {
             return
         }
-
-        self.noResultLoadingView.showInView(self.view, frame: CGRect(x: 0, y: NAVIGATIONBAR_HEIGHT, width: SCREEN_WIDTH, height: SCREEN_HEIGHT - NAVIGATIONBAR_HEIGHT))
+        self.noResultLoadingView.show(view: self.view, frame: CGRect(x: 0, y: NAVIGATIONBAR_HEIGHT, width: SCREEN_WIDTH, height: SCREEN_HEIGHT - NAVIGATIONBAR_HEIGHT))
     }
     func showNoResult() {
         self.noResultLoadingView.removeFromSuperview()
         self.noResultView.removeFromSuperview()
-
         if !self.isShowNoResult {
             return
         }
-
-        self.noResultView.showInView(self.view, frame: CGRect(x: 0, y: NAVIGATIONBAR_HEIGHT, width: SCREEN_WIDTH, height: SCREEN_HEIGHT - NAVIGATIONBAR_HEIGHT))
+        self.noResultView.show(view: self.view, frame: CGRect(x: 0, y: NAVIGATIONBAR_HEIGHT, width: SCREEN_WIDTH, height: SCREEN_HEIGHT - NAVIGATIONBAR_HEIGHT))
     }
+    
+     
     func protocolDidRequestSuccess() {
         self.loadingView.hideLoading()
     }
-    func protocolDidRequestFailure(_ errorStr: String!) {
+    func protocolDidRequestFailure(error: String?) {
         self.loadingView.hideLoading()
 
         if self.isNotShowNoticeView {
             return
         }
 
-        GlobalMethod.endEditing()
-
-        if self.view.isShowInScreen() && isStr(errorStr) {
-            self.noticeView.showNotice(errorStr, time: 1, frame: CGRect(x: 0, y: 0, width: SCREEN_WIDTH, height: SCREEN_HEIGHT), viewShow: UIApplication.sharedApplication().keyWindow)
+        if self.view.isShowInScreen() && (error?.count ?? 0) > 0 {
+            noticeView.show(notice:error , time: 1, frame: CGRect.init(x: 0, y: 0, width: SCREEN_WIDTH, height: SCREEN_HEIGHT), viewShow: UIApplication.shared.keyWindow)
         }
+        
     }
-    func textFieldShouldReturn(_ textField: UITextField!) -> Bool {
+   
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         self.view.endEditing(true)
-
         return true
     }
     func preferredStatusBarStyle() -> UIStatusBarStyle {
-        return GlobalData.sharedInstance().statusBarStyle
+        return GlobalData.statusBarStyle
     }
     func prefersStatusBarHidden() -> Bool {
-        return GlobalData.sharedInstance().statusHidden
+        return GlobalData.isStatusHidden
     }
- */
 }

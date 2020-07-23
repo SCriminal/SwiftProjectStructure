@@ -26,7 +26,7 @@ protocol RequestDelegate {
     func showNoResult()
     func protocolWillRequest()
     func protocolDidRequestSuccess()
-    func protocolDidRequestFailure() -> String
+    func protocolDidRequestFailure(error: String?)
 }
 
 
@@ -35,8 +35,7 @@ extension RequestDelegate {
     func showNoResult() {}
     func protocolWillRequest() {}
     func protocolDidRequestSuccess() {}
-    func protocolDidRequestFailure() -> String {
-        return ""
+    func protocolDidRequestFailure(error: String?){
     }
 }
 
@@ -155,7 +154,7 @@ class RequestApi {
     
     // MARK: fail
     private class func requestFailDelegate(delegate:RequestDelegate?, strError: String?, errorCode: String?, failure:((String?,AnyObject?)->Void)?) {
-        let _ = delegate?.protocolDidRequestFailure()
+        let _ = delegate?.protocolDidRequestFailure(error: strError)
         if let failure = failure {
             failure(strError, errorCode as AnyObject?)
         }

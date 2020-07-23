@@ -117,6 +117,16 @@ extension UIView {
         }
     }
     
+    var centerXTop: (x:CGFloat, y:CGFloat) {
+        get {
+            return (left+width/2.0,top)
+        }
+        set (newValue){
+            left = newValue.x - width/2.0
+            top = newValue.y
+        }
+    }
+    
     var rightTop: (x:CGFloat, y:CGFloat) {
         get {
             return (right,top)
@@ -211,5 +221,36 @@ extension UIView {
         while (self.subviews.count > 0) {
             self.subviews.last?.removeFromSuperview()
         }
+    }
+    
+    func removeSubView(tag: Int) {
+        for item in self.subviews {
+            if item.tag == tag {
+                item.removeFromSuperview()
+            }
+        }
+    }
+    
+    func isShowInScreen() -> Bool {
+        let screenRect = UIScreen.main.bounds
+        let rectInWindow = self.superview?.convert(self.frame, to: UIApplication.shared.keyWindow)
+        guard let rect = rectInWindow, rect.isEmpty == false else {
+            return false
+        }
+        guard self.isHidden == false else {
+            return false
+        }
+        guard self.superview != nil else {
+            return false
+        }
+        guard rect.equalTo(CGRect.zero) == false else {
+            return false
+        }
+        
+        let interSectionRect = rect.intersection(screenRect)
+        if interSectionRect.isEmpty || interSectionRect.isNull {
+            return false
+        }
+        return true
     }
 }

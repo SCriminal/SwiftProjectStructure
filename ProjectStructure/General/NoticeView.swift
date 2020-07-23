@@ -38,12 +38,12 @@ class NoticeView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func showNotice(_ strNotice: String!, time timeShow: CGFloat, frame: CGRect, viewShow: UIView!) {
+    func show(notice: String!, time timeShow: CGFloat, frame: CGRect, viewShow: UIView!) {
         if self.superview != nil {
             self.removeFromSuperview()
         }
         //去掉空格
-        let aryStr = strNotice.split(separator: " ")
+        let aryStr = notice.split(separator: " ")
         let strNotice = aryStr.joined(separator: "")
 
         self.timerStop()

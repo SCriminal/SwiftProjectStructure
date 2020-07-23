@@ -23,7 +23,7 @@ class GlobalMethod {
     
     static func showAlert(_ alert:String?) {
         let window = UIApplication.shared.keyWindow
-        GlobalData.GB_NoticeView?.showNotice(alert, time: 1, frame: UIScreen.main.bounds, viewShow: window)
+        GlobalData.GB_NoticeView?.show(notice:alert, time: 1, frame: UIScreen.main.bounds, viewShow: window)
     }
    
 }
