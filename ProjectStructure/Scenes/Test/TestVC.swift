@@ -7,7 +7,7 @@
 //
 
 import Foundation
-/*
+/*Dear f: I have just seen the extra letter,
  */
 class TestVC: BaseVC {
     lazy var modelButton: UIButton = {
@@ -69,6 +69,14 @@ class TestVC: BaseVC {
         GB_Nav.pushViewController(JavaTestVC.init(), animated: true)
     }
     @objc func csvClick() {
-        GB_Nav.pushViewController(CSVParseVC.init(), animated: true)
+        var f1:Float = 0
+        for _ in 0..<1000 {
+            f1 += 0.1
+            let i = Int(f1)
+            print("float: \(f1) int: \(i)")
+        }
+        return
+            
+//        GB_Nav.pushViewController(CSVParseVC.init(), animated: true)
     }
 }
